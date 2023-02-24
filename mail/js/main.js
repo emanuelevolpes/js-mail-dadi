@@ -6,8 +6,13 @@ const userMail = prompt('Inserisci la tua Email');
 let inList = false;
 
 for (let i = 0; i < email.length; i++) {
-    if (email === userMail) {
+    if (email[i] === userMail) {
         inList = true;
-        console.log('sei in lista');
     };
+};
+
+if (inList === true) {
+    console.log('sei in lista');
+} else {
+    console.log('non sei in lista');
 };
